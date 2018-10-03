@@ -1,0 +1,127 @@
+<html>
+<head>
+  <meta content="text/html"; charset=UTF-8">
+  <title>Evaluacion Final</title>
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><!-- jQuery library Bootstrap -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script><!-- Latest compiled JavaScript -->
+
+  <script type="text/javascript" src="js/EvaluacionFinal.js"></script>
+
+
+</head>
+
+<body class="">
+  <div class="container">
+
+    <div class="page">
+
+      <div class="jumbotron">
+        <div class="row">
+          <div class="col-md-12">
+            <div>
+              <h1>EVALUACION FINAL</h1>
+              <h2>Curso1 JavaScript: Lo esencial</h2>
+              <h2>Kevin Melendez</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+            
+      <div id="contenido" class="">          
+        <div class="" id="">
+
+
+          <div class="row">
+              <div id="mostrar_json" class="col-md-12">
+                <div class="panel panel-primary">
+                  <div class="panel-heading">
+                    <h4 class="panel-title text-center ">ESTUDIANTES</h4>
+                  </div>
+                  <div class="panel-body">
+                    <p>La primera acción es mostrar todos los objetos del JSON con sus respectivas propiedades en pantalla</p>
+
+                    <p id="estudiantes"></p>
+                    <button type="submit" class="btn btn-success" onclick="mostrarEstudiantes()">Mostrar Estudiantes</button>
+                  </div>
+                </div>
+              </div>     
+          </div>
+
+
+          <div class="row">
+
+              <div id="mostrar_promedio" class="col-md-4">
+                <div class="panel panel-primary">
+                  <div class="panel-heading">
+                      <h4 class="panel-title text-center ">PROMEDIO DE NOTA</h4>
+                  </div>        
+                  <div class="panel-body">
+                    <P> La segunda acción es calcular la nota promedio y mostrarla en pantalla</P>
+                    <p id="promedioNota" class="panel-title text-center "></p>
+                    <button type="submit" class="btn btn-success" data-toggle="modal" data-target="#myModal" onclick="mostrarPromedio()">Calcular Promedio</button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal" role="dialog">
+                      <div class="modal-dialog">
+                      
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Nota Promedio de los Estudiantes</h4>
+                          </div>
+                          <div class="modal-body">
+                            <p id="promedioNotaModal"> </p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+
+              <div id="mostrar_mejorEstu" class="col-md-4">
+                <div class="panel panel-primary">
+                  <div class="panel-heading">
+                    <h4 class="panel-title text-center ">El MEJOR ESTUDIANTES</h4>
+                  </div>
+                      
+                  <div class="panel-body">
+                    <P>La tercera acción es mostrar en pantalla el estudiante con la nota mayor</P>
+                    <p id="mejorE"></p>
+                    <button type="submit" class="btn btn-success" onclick="mostrarMEstudiante()">Mostar Estudiante </button>
+                  </div>
+                </div>
+
+              </div >
+
+
+              <div id="aciones" class="col-md-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                      <h4 class="panel-title text-center ">EL PEOR ESTUDIANTES</h4>
+                    </div>
+                        
+                    <div class="panel-body">
+                      <P> La cuarta acción es mostrar en pantalla el estudiante con la menor nota de todas.</P>
+                      <p id="peorE"></p>
+                      <button type="submit" class="btn btn-success"  onclick="mostrarPEstudiante()">Mostar Estudiante</button>
+                    </div>
+                </div>     
+              </div>     
+          </div>
+        </div>
+      </div>
+
+    </div> 
+  
+  </div>
+</body>
+</html>
